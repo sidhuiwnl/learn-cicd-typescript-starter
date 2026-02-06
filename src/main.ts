@@ -40,6 +40,11 @@ if (db) {
   v1Router.post("/notes", middlewareAuth(handlerNotesCreate));
 }
 
+function unused() {
+  // this function does nothing
+  // and is called nowhere
+}
+
 v1Router.get("/healthz", handlerReadiness);
 
 app.use("/v1", v1Router);
